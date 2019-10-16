@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MovieApplication"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="531.954">
     <Grid x:Name="titleTextBox">
         <TextBox x:Name="titleTextBox1" HorizontalAlignment="Left" Height="23" Margin="85,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox1_TextChanged"/>
         <Label x:Name="titleLabel" Content="Title" HorizontalAlignment="Left" Margin="85,40,0,0" VerticalAlignment="Top"/>
@@ -13,7 +13,7 @@
         <Label x:Name="reviewScoreLabel" Content="ReviewScore" HorizontalAlignment="Left" Margin="85,187,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="genreTextBox" HorizontalAlignment="Left" Height="23" Margin="85,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="reviewScoreTextBox" HorizontalAlignment="Left" Height="23" Margin="85,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="submitButton" Content="Submit" HorizontalAlignment="Left" Margin="222,89,0,0" VerticalAlignment="Top" Width="139" Height="147" Click="submitButton_Click"/>
+        <Button x:Name="submitButton" Content="Submit" HorizontalAlignment="Left" Margin="268,211,0,0" VerticalAlignment="Top" Width="67" Height="25" Click="submitButton_Click"/>
 
     </Grid>
 </Window>

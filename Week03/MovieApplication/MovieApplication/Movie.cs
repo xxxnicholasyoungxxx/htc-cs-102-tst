@@ -29,7 +29,7 @@ namespace MovieApplication
 
         public void DisplayInformation()
         {
-            MessageBox.Show($"Title:{Title} \n Genre:{Genre} \n ReviewScore:{ReviewScore} \n Director:{Director}");
+            MessageBox.Show($"Title:{Title} \n Genre:{Genre} \n ReviewScore:{ReviewScore} \n Director:{Director} \n Length:{Length}");
         }
     }
 }

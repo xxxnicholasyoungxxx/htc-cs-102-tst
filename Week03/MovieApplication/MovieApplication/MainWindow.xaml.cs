@@ -37,19 +37,27 @@ namespace MovieApplication
 
         private void submitButton_Click(object sender, RoutedEventArgs e)
         {
-            Movie submittedMovie = new Movie(titleTextBox1.Text, genreTextBox.Text, Double.Parse(reviewScoreTextBox.Text));
+            Movie submittedMovie = new Movie(titleTextBox1.Text, genreTextBox.Text, Double.Parse(reviewScoreTextBox.Text), directorTextBox.Text, Double.Parse(lengthTextBox.Text));
 
             movieList.Add(submittedMovie);
             /*submittedMovie.Title = titleTextBox1.Text;
             submittedMovie.Genre = genreTextBox.Text;
             submittedMovie.ReviewScore = Double.Parse(reviewScoreTextBox.Text);*/
 
-            submittedMovie.DisplayInformation();
+            //submittedMovie.DisplayInformation();
 
             titleTextBox1.Clear();
             genreTextBox.Clear();
             reviewScoreTextBox.Clear();
+            directorTextBox.Clear();
+            lengthTextBox.Clear();
 
+        }
+
+        private void movieListView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Movie selectedMovie = movieListView.SelectedItem as Movie;
+            selectedMovie.DisplayInformation();
         }
     }
 }

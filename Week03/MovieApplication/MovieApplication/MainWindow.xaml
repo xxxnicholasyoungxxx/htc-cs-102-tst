@@ -19,13 +19,13 @@
         </Grid.RowDefinitions>
         <TextBox x:Name="titleTextBox1" HorizontalAlignment="Left" Height="23" Margin="33,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" TextChanged="textBox1_TextChanged" Grid.ColumnSpan="2" Grid.Row="2"/>
         <Label x:Name="titleLabel" Content="Title" HorizontalAlignment="Left" Margin="33,24,0,0" VerticalAlignment="Top" Height="26" Width="31" Grid.Row="2"/>
-        <Label x:Name="genreLabel" Content="Genre" HorizontalAlignment="Left" Margin="31,66,0,0" VerticalAlignment="Top" Height="26" Width="42" Grid.Row="2"/>
+        <Label x:Name="genreLabel" Content="Genre" HorizontalAlignment="Left" Margin="31,73,0,0" VerticalAlignment="Top" Height="26" Width="42" Grid.Row="2"/>
         <Label x:Name="reviewScoreLabel" Content="ReviewScore" HorizontalAlignment="Left" Margin="31,113,0,0" VerticalAlignment="Top" Grid.Row="2" Height="26" Width="76" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="genreTextBox" HorizontalAlignment="Left" Height="23" Margin="31,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" Grid.ColumnSpan="2" Grid.Row="2"/>
+        <TextBox x:Name="genreTextBox" HorizontalAlignment="Left" Height="23" Margin="31,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" Grid.ColumnSpan="2" Grid.Row="2"/>
         <TextBox x:Name="reviewScoreTextBox" HorizontalAlignment="Left" Height="23" Margin="31,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" Grid.Row="2" Grid.ColumnSpan="2"/>
-        <Button x:Name="submitButton" Content="Submit" HorizontalAlignment="Left" Margin="116,87,0,0" VerticalAlignment="Top" Width="53" Height="28" Click="submitButton_Click" Grid.Row="2" Grid.Column="1"/>
+        <Button x:Name="submitButton" Content="Submit" HorizontalAlignment="Left" Margin="116,134,0,0" VerticalAlignment="Top" Width="53" Height="28" Click="submitButton_Click" Grid.Row="2" Grid.Column="1"/>
 
-        <ListView x:Name="movieListView" HorizontalAlignment="Left" Height="149" Margin="69,10,0,0" VerticalAlignment="Top" Width="506" Grid.RowSpan="2" Grid.ColumnSpan="2" MouseDoubleClick="movieListView_MouseDoubleClick">
+        <ListView x:Name="movieListView" HorizontalAlignment="Left" Height="149" Margin="69,10,0,0" VerticalAlignment="Top" Width="506" Grid.RowSpan="2" Grid.ColumnSpan="2" MouseDoubleClick="movieListView_MouseDoubleClick" Background="#FFB2E6B2" BorderBrush="#FF0953D8" Foreground="Black">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="100" Header="Title" DisplayMemberBinding="{Binding Title}"></GridViewColumn>
@@ -43,7 +43,11 @@
         <TextBlock x:Name="lengthLabel" HorizontalAlignment="Left" Margin="33,167,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Length" VerticalAlignment="Top"/>
         <Button x:Name="nextMovieButton" Content="Next Movie" Grid.Column="1" HorizontalAlignment="Left" Margin="207,167,0,0" Grid.Row="2" VerticalAlignment="Top" Width="85" Height="33"/>
         <TextBlock x:Name="posterLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="318,8,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <Image x:Name="image" Grid.Column="1" HorizontalAlignment="Left" Height="176" Margin="318,24,0,0" Grid.Row="2" VerticalAlignment="Top" Width="188" Grid.ColumnSpan="2"/>
+        <Image x:Name="image" Grid.Column="1" HorizontalAlignment="Left" Height="176" Margin="318,24,0,0" Grid.Row="2" VerticalAlignment="Top" Width="188" Grid.ColumnSpan="2">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="file://C:/Users/User1/Desktop/hi.jpg" Stretch="UniformToFill"/>
+            </Image.OpacityMask>
+        </Image>
 
     </Grid>
 </Window>

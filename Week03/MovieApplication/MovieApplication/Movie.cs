@@ -13,11 +13,11 @@ namespace MovieApplication
         public string Genre { get; set; }
         public string Director { get; set; }
         public double ReviewScore { get; set; }
-        public double Length { get; set; }
+        public int Length { get; set; }
 
         public List<string> Actors;
 
-        public Movie(string title, string genre, double reviewscore, string director, double length)
+        public Movie(string title, string genre, double reviewscore, string director, int length)
         {
             Title = title;
             Genre = genre;

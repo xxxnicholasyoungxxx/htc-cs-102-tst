@@ -37,7 +37,7 @@ namespace MovieApplication
 
         private void submitButton_Click(object sender, RoutedEventArgs e)
         {
-            Movie submittedMovie = new Movie(titleTextBox1.Text, genreTextBox.Text, Double.Parse(reviewScoreTextBox.Text), directorTextBox.Text, Double.Parse(lengthTextBox.Text));
+            Movie submittedMovie = new Movie(titleTextBox1.Text, genreTextBox.Text, Double.Parse(reviewScoreTextBox.Text), directorTextBox.Text, Convert.ToInt32(lengthTextBox.Text));
 
             movieList.Add(submittedMovie);
             /*submittedMovie.Title = titleTextBox1.Text;
@@ -51,6 +51,12 @@ namespace MovieApplication
             reviewScoreTextBox.Clear();
             directorTextBox.Clear();
             lengthTextBox.Clear();
+
+        }
+
+
+        private void nextMovieButton_Click()
+        {
 
         }
 

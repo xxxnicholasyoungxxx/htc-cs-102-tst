@@ -7,9 +7,22 @@ using System.Windows;
 
 namespace PolymorphismIntro
 {
-    public class Dog : Animal
+    public class Dog : Animal, IMammal
     {
         public string Breed;
+
+        public string HairColor
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
 
         public override void Speak()
         {

@@ -8,7 +8,7 @@ namespace Final
 {
     class heart : Cards
     {
-        public heart(string suit, int value)
+        public heart(int suit, int value)
         {
             this.suit = suit;
             this.value = value;

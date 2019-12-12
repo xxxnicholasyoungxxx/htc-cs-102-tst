@@ -8,7 +8,7 @@ namespace Final
 {
     class club : Cards
     {
-        public club(string suit, int value)
+        public club(int suit, int value)
         {
             this.suit = suit;
             this.value = value;

@@ -8,7 +8,7 @@ namespace Final
 {
     public class Cards
     {
-        public string suit { get; set; }
+        public int suit { get; set; }
         public int value { get; set; }
 
         

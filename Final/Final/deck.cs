@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace Final
 {
-    class diamond : Cards
+    class deck
     {
-        public diamond(int suit, int value)
-        {
-            this.suit = suit;
-            this.value = value;
-        }
+        //Random rnd = new Random();
+        //int valu = rnd.Next(1, 4);
+        //int clas = rnd.Next(1, 4);
     }
 }

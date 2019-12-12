@@ -56,6 +56,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="comp.cs" />
+    <Compile Include="deck.cs" />
     <Compile Include="diamond.cs" />
     <Compile Include="myHand.cs" />
     <Compile Include="spade.cs" />
